@@ -1,11 +1,8 @@
 // Main JavaScript file for Do'r Stack Limited website
 
-// Import Lucide icons library
-import lucide from "lucide"
-
 // Initialize Lucide icons
 document.addEventListener("DOMContentLoaded", () => {
-  lucide.createIcons()
+  if (window.lucide) window.lucide.createIcons()
 
   // Initialize all components
   initMobileMenu()
@@ -27,15 +24,13 @@ function initMobileMenu() {
   if (mobileMenuBtn && mobileNav) {
     mobileMenuBtn.addEventListener("click", () => {
       mobileNav.classList.toggle("active")
-
-      // Toggle icon
       const icon = mobileMenuBtn.querySelector("i")
       if (mobileNav.classList.contains("active")) {
         icon.setAttribute("data-lucide", "x")
       } else {
         icon.setAttribute("data-lucide", "menu")
       }
-      lucide.createIcons()
+      if (window.lucide) window.lucide.createIcons()
     })
 
     // Close mobile menu when clicking on links
@@ -45,7 +40,7 @@ function initMobileMenu() {
         mobileNav.classList.remove("active")
         const icon = mobileMenuBtn.querySelector("i")
         icon.setAttribute("data-lucide", "menu")
-        lucide.createIcons()
+        if (window.lucide) window.lucide.createIcons()
       })
     })
 
@@ -55,7 +50,7 @@ function initMobileMenu() {
         mobileNav.classList.remove("active")
         const icon = mobileMenuBtn.querySelector("i")
         icon.setAttribute("data-lucide", "menu")
-        lucide.createIcons()
+        if (window.lucide) window.lucide.createIcons()
       }
     })
   }
@@ -303,7 +298,7 @@ document.addEventListener("DOMContentLoaded", () => {
   )
 
   // Reinitialize icons after adding scroll button
-  lucide.createIcons()
+  if (window.lucide) window.lucide.createIcons()
 })
 
 // Form validation utilities
