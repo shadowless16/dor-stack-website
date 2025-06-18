@@ -40,43 +40,53 @@
 /* Leadership Grid */
 .leadership-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 2.5rem;
+  align-items: stretch;
 }
 
 .leader-card {
-  background: white;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  background: #fff;
   border: 2px solid var(--gray-100);
-  border-radius: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
   overflow: hidden;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  min-height: 350px;
+  max-width: 1200px;
+  margin: 0 auto;
+  transition: border-color 0.3s;
 }
 
 .leader-card:hover {
   border-color: var(--gold-400);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
 .leader-image {
-  position: relative;
-  height: 16rem;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gray-50);
+  height: 100%;
+  min-height: 300px;
 }
 
 .leader-image img {
-  width: 100%;
-  height: 100%;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
   object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.leader-card:hover .leader-image img {
-  transform: scale(1.05);
+  border: 4px solid #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 .leader-content {
-  padding: 2rem;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .leader-header {
@@ -84,15 +94,18 @@
 }
 
 .leader-name {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 800;
   color: var(--zaffre-900);
   margin-bottom: 0.25rem;
 }
 
 .leader-title {
   color: var(--zaffre-600);
-  font-weight: 500;
-  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  text-decoration: underline;
 }
 
 .leader-bio {
@@ -100,10 +113,9 @@
 }
 
 .leader-bio p {
-  color: var(--gray-600);
-  line-height: 1.6;
-  font-size: 0.875rem;
-  margin: 0;
+  color: var(--gray-700);
+  font-size: 1.15rem;
+  margin-bottom: 1.5rem;
 }
 
 .leader-expertise {
@@ -111,75 +123,81 @@
 }
 
 .leader-expertise h4 {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.15rem;
+  font-weight: 700;
   color: var(--zaffre-900);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .expertise-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .expertise-tag {
-  background: var(--zaffre-100);
-  color: var(--zaffre-800);
-  padding: 0.25rem 0.75rem;
+  background: var(--gray-100);
+  color: #111;
+  padding: 0.35rem 1rem;
   border-radius: 9999px;
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .leader-details {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .leader-detail {
-  font-size: 0.875rem;
+  font-size: 1.1rem;
 }
 
 .detail-label {
-  font-weight: 600;
+  font-weight: 700;
   color: var(--zaffre-900);
 }
 
 .detail-value {
-  color: var(--gray-600);
+  color: var(--gray-700);
 }
 
 .leader-social {
   display: flex;
-  gap: 0.75rem;
+  gap: 1.25rem;
+  margin-top: 1rem;
 }
 
 .leader-social .social-link {
   color: var(--zaffre-600);
-  transition: color 0.3s ease;
+  font-size: 1.5rem;
+  transition: color 0.3s;
 }
 
 .leader-social .social-link:hover {
-  color: var(--zaffre-800);
+  color: var(--gold-400);
 }
 
 /* Department Heads */
 .department-heads-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
 }
 
 .department-head-card {
-  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
   border: 2px solid var(--gray-100);
-  border-radius: 0.5rem;
-  padding: 1.5rem;
-  text-align: center;
-  transition: all 0.3s ease;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  min-height: 420px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+  position: relative;
 }
 
 .department-head-card:hover {
@@ -188,79 +206,80 @@
 }
 
 .department-head-image {
-  width: 6rem;
-  height: 6rem;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   overflow: hidden;
-  margin: 0 auto 1rem;
-  border: 4px solid var(--gray-100);
-  transition: border-color 0.3s ease;
-}
-
-.department-head-card:hover .department-head-image {
-  border-color: var(--gold-400);
-}
-
-.department-head-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  margin-bottom: 1.25rem;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 .department-head-content {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  align-items: center;
 }
 
 .department-head-name {
-  font-size: 1.125rem;
-  font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: 700;
   color: var(--zaffre-900);
   margin-bottom: 0.25rem;
+  text-align: center;
 }
 
 .department-head-title {
   color: var(--zaffre-600);
+  font-size: 1rem;
   font-weight: 500;
   margin-bottom: 1rem;
-  font-size: 0.875rem;
+  text-align: center;
 }
 
 .department-head-expertise {
-  margin-bottom: 1rem;
-  flex: 1;
+  margin-bottom: 1.25rem;
+  width: 100%;
 }
 
-.department-head-expertise h4 {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--zaffre-900);
-  margin-bottom: 0.5rem;
+.expertise-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.expertise-tag {
+  background: var(--gray-100);
+  color: #111;
+  padding: 0.35rem 1rem;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .department-head-experience {
-  font-size: 0.875rem;
-  color: var(--gray-600);
+  font-size: 1rem;
+  color: var(--gray-700);
   margin-bottom: 1rem;
-}
-
-.department-head-experience span {
-  font-weight: 600;
+  text-align: center;
 }
 
 .department-head-connect {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.5rem;
   color: var(--zaffre-600);
   text-decoration: none;
-  font-size: 0.875rem;
-  transition: color 0.3s ease;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: auto;
+  transition: color 0.3s;
 }
 
 .department-head-connect:hover {
-  color: var(--zaffre-800);
+  color: var(--gold-400);
 }
 
 /* Culture & Values */
