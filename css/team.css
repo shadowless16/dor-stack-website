@@ -1,0 +1,435 @@
+/* Team Page Specific Styles */
+
+/* Team Stats */
+.team-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.team-stat {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.team-stat-icon {
+  width: 4rem;
+  height: 4rem;
+  background: var(--zaffre-100);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: var(--zaffre-600);
+}
+
+.team-stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--zaffre-900);
+  margin-bottom: 0.5rem;
+}
+
+.team-stat-label {
+  color: var(--gray-600);
+  font-size: 1rem;
+}
+
+/* Leadership Grid */
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 3rem;
+}
+
+.leader-card {
+  background: white;
+  border: 2px solid var(--gray-100);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.leader-card:hover {
+  border-color: var(--gold-400);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.leader-image {
+  position: relative;
+  height: 16rem;
+  overflow: hidden;
+}
+
+.leader-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.leader-card:hover .leader-image img {
+  transform: scale(1.05);
+}
+
+.leader-content {
+  padding: 2rem;
+}
+
+.leader-header {
+  margin-bottom: 1.5rem;
+}
+
+.leader-name {
+  font-size: 1.5rem;
+  color: var(--zaffre-900);
+  margin-bottom: 0.25rem;
+}
+
+.leader-title {
+  color: var(--zaffre-600);
+  font-weight: 500;
+  margin: 0;
+}
+
+.leader-bio {
+  margin-bottom: 1.5rem;
+}
+
+.leader-bio p {
+  color: var(--gray-600);
+  line-height: 1.6;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.leader-expertise {
+  margin-bottom: 1.5rem;
+}
+
+.leader-expertise h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--zaffre-900);
+  margin-bottom: 0.75rem;
+}
+
+.expertise-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.expertise-tag {
+  background: var(--zaffre-100);
+  color: var(--zaffre-800);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.leader-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.leader-detail {
+  font-size: 0.875rem;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: var(--zaffre-900);
+}
+
+.detail-value {
+  color: var(--gray-600);
+}
+
+.leader-social {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.leader-social .social-link {
+  color: var(--zaffre-600);
+  transition: color 0.3s ease;
+}
+
+.leader-social .social-link:hover {
+  color: var(--zaffre-800);
+}
+
+/* Department Heads */
+.department-heads-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.department-head-card {
+  background: white;
+  border: 2px solid var(--gray-100);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.department-head-card:hover {
+  border-color: var(--gold-400);
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+}
+
+.department-head-image {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 4px solid var(--gray-100);
+  transition: border-color 0.3s ease;
+}
+
+.department-head-card:hover .department-head-image {
+  border-color: var(--gold-400);
+}
+
+.department-head-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.department-head-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.department-head-name {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: var(--zaffre-900);
+  margin-bottom: 0.25rem;
+}
+
+.department-head-title {
+  color: var(--zaffre-600);
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.department-head-expertise {
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.department-head-expertise h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--zaffre-900);
+  margin-bottom: 0.5rem;
+}
+
+.department-head-experience {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  margin-bottom: 1rem;
+}
+
+.department-head-experience span {
+  font-weight: 600;
+}
+
+.department-head-connect {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--zaffre-600);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+
+.department-head-connect:hover {
+  color: var(--zaffre-800);
+}
+
+/* Culture & Values */
+.culture-values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.culture-value {
+  text-align: center;
+}
+
+.culture-value-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.culture-value-icon.bg-blue {
+  background-color: var(--zaffre-600);
+  color: white;
+}
+
+.culture-value-icon.bg-gold {
+  background-color: var(--gold-500);
+  color: var(--zaffre-900);
+}
+
+.culture-value-title {
+  font-size: 1.25rem;
+  color: var(--zaffre-900);
+  margin-bottom: 1rem;
+}
+
+.culture-value-description {
+  color: var(--gray-600);
+  line-height: 1.6;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Large Leadership Layout */
+@media (min-width: 1024px) {
+  .leader-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0;
+  }
+
+  .leader-image {
+    height: auto;
+    min-height: 100%;
+  }
+
+  .leader-content {
+    padding: 3rem;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .leader-details {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .department-heads-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leader-content {
+    padding: 1.5rem;
+  }
+
+  .department-head-card {
+    padding: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .leader-content {
+    padding: 1rem;
+  }
+
+  .expertise-tags {
+    justify-content: center;
+  }
+
+  .culture-values-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Animation classes */
+.leader-card,
+.department-head-card,
+.culture-value {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.leader-card.visible,
+.department-head-card.visible,
+.culture-value.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger animation delay */
+.leader-card:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.leader-card:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.leader-card:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.leader-card:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+.department-head-card:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.department-head-card:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.department-head-card:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.department-head-card:nth-child(4) {
+  transition-delay: 0.4s;
+}
+.department-head-card:nth-child(5) {
+  transition-delay: 0.5s;
+}
+.department-head-card:nth-child(6) {
+  transition-delay: 0.6s;
+}

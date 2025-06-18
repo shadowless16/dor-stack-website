@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Do'r Stack Limited</title>
+    <meta name="description" content="Get in touch with Do'r Stack Limited. Contact our global team for consulting, contracting, and real estate services.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">D</div>
+                    <div class="logo-text">
+                        <div class="logo-main">Do'r Stack</div>
+                        <div class="logo-sub">LIMITED</div>
+                    </div>
+                </a>
+
+                <div class="nav-links desktop-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="industries.html" class="nav-link">Industries</a>
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    <a href="testimonials.html" class="nav-link">Testimonials</a>
+                    <a href="team.html" class="nav-link">Team</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-nav" id="mobileNav">
+            <div class="mobile-nav-content">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="services.html" class="mobile-nav-link">Services</a>
+                <a href="industries.html" class="mobile-nav-link">Industries</a>
+                <a href="portfolio.html" class="mobile-nav-link">Portfolio</a>
+                <a href="testimonials.html" class="mobile-nav-link">Testimonials</a>
+                <a href="team.html" class="mobile-nav-link">Team</a>
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="contact.html" class="mobile-nav-link active">Contact</a>
+                <a href="contact.html" class="btn btn-primary mobile-cta">Get Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-hero-title">
+                    Get In <span class="text-gold">Touch</span>
+                </h1>
+                <p class="page-hero-subtitle">
+                    Ready to transform your business? Let's discuss how Do'r Stack Limited can help you achieve your goals
+                    with our global expertise.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section class="section bg-white">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <div class="contact-card">
+                        <div class="contact-card-header">
+                            <h2 class="contact-card-title">Send Us a Message</h2>
+                            <p class="contact-card-subtitle">Fill out the form below and we'll get back to you within 24 hours.</p>
+                        </div>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName" class="form-label">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName" class="form-label">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" class="form-input" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" id="email" name="email" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company" class="form-label">Company Name *</label>
+                                <input type="text" id="company" name="company" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="service" class="form-label">Service of Interest *</label>
+                                <select id="service" name="service" class="form-select" required>
+                                    <option value="">Select a service</option>
+                                    <option value="business-strategy">Business Strategy Consulting</option>
+                                    <option value="it-consulting">IT Consulting & Digital Transformation</option>
+                                    <option value="operations">Operations Management</option>
+                                    <option value="project-management">Project Management</option>
+                                    <option value="engineering">Engineering Services</option>
+                                    <option value="construction">Construction Management</option>
+                                    <option value="real-estate">Real Estate Development</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="budget" class="form-label">Project Budget</label>
+                                    <select id="budget" name="budget" class="form-select">
+                                        <option value="">Select budget range</option>
+                                        <option value="under-100k">Under $100K</option>
+                                        <option value="100k-500k">$100K - $500K</option>
+                                        <option value="500k-1m">$500K - $1M</option>
+                                        <option value="1m-5m">$1M - $5M</option>
+                                        <option value="over-5m">Over $5M</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="timeline" class="form-label">Timeline</label>
+                                    <select id="timeline" name="timeline" class="form-select">
+                                        <option value="">Select timeline</option>
+                                        <option value="immediate">Immediate (1-3 months)</option>
+                                        <option value="short-term">Short-term (3-6 months)</option>
+                                        <option value="medium-term">Medium-term (6-12 months)</option>
+                                        <option value="long-term">Long-term (12+ months)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Project Details *</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="5" 
+                                    placeholder="Please describe your project requirements, challenges, and objectives..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg form-submit">
+                                Send Message
+                                <i data-lucide="send"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <div class="contact-info-card">
+                        <h3 class="contact-info-title">Contact Information</h3>
+                        <div class="contact-info-list">
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div class="contact-info-content">
+                                    <p class="contact-info-label">Phone</p>
+                                    <p class="contact-info-value">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="contact-info-content">
+                                    <p class="contact-info-label">Email</p>
+                                    <p class="contact-info-value">info@dorstacklimited.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="contact-info-content">
+                                    <p class="contact-info-label">Headquarters</p>
+                                    <p class="contact-info-value">123 Business District<br>New York, NY 10001</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i data-lucide="clock"></i>
+                                </div>
+                                <div class="contact-info-content">
+                                    <p class="contact-info-label">Business Hours</p>
+                                    <p class="contact-info-value">Mon-Fri: 9:00 AM - 6:00 PM EST</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-actions-card">
+                        <h3 class="quick-actions-title">Quick Actions</h3>
+                        <div class="quick-actions-list">
+                            <a href="#" class="quick-action-btn">
+                                <i data-lucide="calendar"></i>
+                                Schedule a Consultation
+                            </a>
+                            <a href="#" class="quick-action-btn">
+                                <i data-lucide="message-square"></i>
+                                Live Chat Support
+                            </a>
+                            <a href="#" class="quick-action-btn">
+                                <i data-lucide="globe"></i>
+                                Request a Quote
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="response-time-card">
+                        <h3 class="response-time-title">Response Time</h3>
+                        <p class="response-time-text">
+                            We typically respond to all inquiries within 24 hours during business days.
+                        </p>
+                        <div class="response-guarantee">
+                            <i data-lucide="check-circle"></i>
+                            <span>Guaranteed response within 24 hours</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Offices -->
+    <section class="section bg-gray">
+        <div class="container">
+            <div class="section-content">
+                <div class="text-center section-header">
+                    <div class="badge badge-blue">GLOBAL PRESENCE</div>
+                    <h2 class="section-title">Our Global Offices</h2>
+                    <p class="section-subtitle">
+                        With offices across four continents, we're positioned to serve clients wherever they need us, whenever
+                        they need us.
+                    </p>
+                </div>
+
+                <div class="offices-grid">
+                    <div class="office-card headquarters">
+                        <div class="office-badge">Headquarters</div>
+                        <h3 class="office-city">New York</h3>
+                        <p class="office-country">United States</p>
+                        
+                        <div class="office-details">
+                            <div class="office-detail">
+                                <i data-lucide="map-pin"></i>
+                                <div>
+                                    <p>123 Business District, Suite 4500</p>
+                                    <p>New York, NY 10001</p>
+                                </div>
+                            </div>
+                            <div class="office-detail">
+                                <i data-lucide="phone"></i>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                            <div class="office-detail">
+                                <i data-lucide="mail"></i>
+                                <p>newyork@dorstacklimited.com</p>
+                            </div>
+                            <div class="office-detail">
+                                <i data-lucide="clock"></i>
+                                <p>EST (UTC-5)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="office-card">
+                        <h3 class="office-city">London</h3>
+                        <p class="office-country">United Kingdom</p>
+                        
+                        <div class="office-details">
+                            <div class="office-detail">
+                                <i data-lucide="map-pin"></i>
+                                <div>
+                                    <p>45 Financial Square, Floor 12</p>
+                                    <p>London EC2V 8RF</p>
+                                </div>
+                            </div>
+                            <div class="office-detail">
+                                <i data-lucide="phone"></i>
+                                <p>+44 20 7123 4567</p>
+                            </div>
+                            <div class="office-detail">
+                                <i data-lucide="mail"></i>
+                                <p>london@dorstacklimited.com</p>
+                            </div>
+                            <div class="office-detail">
+                                <i data-lucide="clock"></i>
+                                <p>GMT (UTC+0)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="office-card">
+                        <h3 class="office-city">Singapore</h3>
+                        <p class="office-country">Singapore</p>
+                        
+                        <div class="office-details">
+                            <div class="office-detail">
+                                <i data-lucide="map-pin"></i>
+                                <div>
+                                    <p>88 Marina Bay Drive, Level 25</p>
+                                    <p>Singapore 018956</p>
+                                </div>
+                            </div>
+                            <div class="office-detail">
+                                <i data-lucide="phone"></i>
+                                <p>+65 6123 4567</p>
+                            </div>
+                            <div class="office-detail">
+                                <i data-lucide="mail"></i>
+                                <p>singapore@dorstacklimited.com</p>
+                            </div>
+                            <div class="office-detail">
+                                <i data-lucide="clock"></i>
+                                <p>SGT (UTC+8)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="office-card">
+                        <h3 class="office-city">Dubai</h3>
+                        <p class="office-country">United Arab Emirates</p>
+                        
+                        <div class="office-details">
+                            <div class="office-detail">
+                                <i data-lucide="map-pin"></i>
+                                <div>
+                                    <p>Dubai International Financial Centre</p>
+                                    <p>Dubai, UAE</p>
+                                </div>
+                            </div>
+                            <div class="office-detail">
+                                <i data-lucide="phone"></i>
+                                <p>+971 4 123 4567</p>
+                            </div>
+                            <div class="office-detail">
+                                <i data-lucide="mail"></i>
+                                <p>dubai@dorstacklimited.com</p>
+                            </div>
+                            <div class="office-detail">
+                                <i data-lucide="clock"></i>
+                                <p>GST (UTC+4)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon bg-gold">D</div>
+                        <div class="logo-text">
+                            <div class="logo-main">Do'r Stack</div>
+                            <div class="logo-sub text-gold">LIMITED</div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Delivering Excellence in Consulting and Contracting for Global Leaders
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i data-lucide="linkedin"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Business Consulting</a></li>
+                        <li><a href="services.html">IT Consulting</a></li>
+                        <li><a href="services.html">Project Management</a></li>
+                        <li><a href="services.html">Engineering</a></li>
+                        <li><a href="services.html">Real Estate</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                <p>123 Business District</p>
+                                <p>Global City, GC 12345</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="mail"></i>
+                            <span>info@dorstacklimited.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Do'r Stack Limited. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

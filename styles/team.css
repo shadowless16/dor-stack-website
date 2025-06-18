@@ -1,0 +1,735 @@
+/* Team Section - Pure CSS for React Components */
+
+/* Team Hero Section */
+.team-hero {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.team-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.team-hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.team-hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Team Stats */
+.team-stats {
+  padding: 3rem 0;
+  background: #f8fafc;
+}
+
+.team-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.team-stat {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-stat:hover {
+  transform: translateY(-5px);
+}
+
+.team-stat-icon {
+  width: 4rem;
+  height: 4rem;
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: #1e40af;
+  font-size: 1.5rem;
+}
+
+.team-stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.team-stat-label {
+  color: #64748b;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Leadership Section */
+.leadership-section {
+  padding: 4rem 0;
+  background: white;
+}
+
+.leadership-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.leadership-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.leadership-header h2 {
+  font-size: 2.5rem;
+  color: #1e40af;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.leadership-header p {
+  font-size: 1.125rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 3rem;
+}
+
+.leader-card {
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.leader-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #1e40af 0%, #f59e0b 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.leader-card:hover {
+  border-color: #f59e0b;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: translateY(-5px);
+}
+
+.leader-card:hover::before {
+  transform: scaleX(1);
+}
+
+.leader-image {
+  position: relative;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.leader-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.leader-card:hover .leader-image img {
+  transform: scale(1.05);
+}
+
+.leader-content {
+  padding: 2.5rem;
+}
+
+.leader-header {
+  margin-bottom: 1.5rem;
+}
+
+.leader-name {
+  font-size: 1.5rem;
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.leader-title {
+  color: #1e40af;
+  font-weight: 500;
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.leader-bio {
+  margin-bottom: 1.5rem;
+}
+
+.leader-bio p {
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.leader-expertise {
+  margin-bottom: 1.5rem;
+}
+
+.leader-expertise h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e40af;
+  margin-bottom: 0.75rem;
+}
+
+.expertise-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.expertise-tag {
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.leader-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.leader-detail {
+  font-size: 0.875rem;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #1e40af;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.detail-value {
+  color: #64748b;
+}
+
+.leader-social {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.social-link {
+  color: #1e40af;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  background: #f0f9ff;
+}
+
+.social-link:hover {
+  color: #1e3a8a;
+  background: #dbeafe;
+  transform: translateY(-2px);
+}
+
+/* Department Heads Section */
+.department-heads-section {
+  padding: 4rem 0;
+  background: #f8fafc;
+}
+
+.department-heads-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.department-heads-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.department-heads-header h2 {
+  font-size: 2.25rem;
+  color: #1e40af;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.department-heads-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.department-head-card {
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.department-head-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #1e40af 0%, #f59e0b 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.department-head-card:hover {
+  border-color: #f59e0b;
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.department-head-card:hover::before {
+  transform: scaleX(1);
+}
+
+.department-head-image {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 4px solid #e2e8f0;
+  transition: border-color 0.3s ease;
+}
+
+.department-head-card:hover .department-head-image {
+  border-color: #f59e0b;
+}
+
+.department-head-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.department-head-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+}
+
+.department-head-name {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #1e40af;
+  margin-bottom: 0.25rem;
+}
+
+.department-head-title {
+  color: #1e40af;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.department-head-expertise {
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.department-head-expertise h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+}
+
+.department-head-expertise p {
+  font-size: 0.875rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.department-head-experience {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+.department-head-experience span {
+  font-weight: 600;
+  color: #1e40af;
+}
+
+.department-head-connect {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: #1e40af;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border: 1px solid #bfdbfe;
+  border-radius: 0.375rem;
+  background: #f0f9ff;
+}
+
+.department-head-connect:hover {
+  color: #1e3a8a;
+  border-color: #1e40af;
+  background: #dbeafe;
+}
+
+/* Culture & Values Section */
+.culture-values-section {
+  padding: 4rem 0;
+  background: white;
+}
+
+.culture-values-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.culture-values-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.culture-values-header h2 {
+  font-size: 2.25rem;
+  color: #1e40af;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.culture-values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.culture-value {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.culture-value-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.culture-value:hover .culture-value-icon {
+  transform: scale(1.1);
+}
+
+.culture-value-icon.bg-blue {
+  background-color: #1e40af;
+  color: white;
+}
+
+.culture-value-icon.bg-gold {
+  background-color: #f59e0b;
+  color: #1e40af;
+}
+
+.culture-value-title {
+  font-size: 1.25rem;
+  color: #1e40af;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.culture-value-description {
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Team CTA Section */
+.team-cta {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+  text-align: center;
+}
+
+.team-cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.team-cta h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.team-cta p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cta-button.primary {
+  background: #f59e0b;
+  color: #1e40af;
+}
+
+.cta-button.primary:hover {
+  background: #d97706;
+  transform: translateY(-2px);
+}
+
+.cta-button.secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.cta-button.secondary:hover {
+  background: white;
+  color: #1e40af;
+}
+
+/* Large Leadership Layout for Desktop */
+@media (min-width: 1024px) {
+  .leader-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0;
+  }
+
+  .leader-image {
+    height: auto;
+    min-height: 100%;
+  }
+
+  .leader-content {
+    padding: 3rem;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .leader-details {
+    grid-template-columns: 1fr;
+  }
+
+  .team-hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .department-heads-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .culture-values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .leader-content {
+    padding: 1.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-hero h1 {
+    font-size: 2rem;
+  }
+
+  .team-hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .culture-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leader-content {
+    padding: 1rem;
+  }
+
+  .team-hero {
+    padding: 2rem 0;
+  }
+
+  .team-hero h1 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Animation Classes */
+.leader-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.leader-card.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.department-head-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.department-head-card.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.team-stat {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.team-stat.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger animation delays */
+.leader-card:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.leader-card:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.leader-card:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.leader-card:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+.department-head-card:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.department-head-card:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.department-head-card:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.department-head-card:nth-child(4) {
+  transition-delay: 0.4s;
+}
+.department-head-card:nth-child(5) {
+  transition-delay: 0.5s;
+}
+.department-head-card:nth-child(6) {
+  transition-delay: 0.6s;
+}
+
+.team-stat:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.team-stat:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.team-stat:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.team-stat:nth-child(4) {
+  transition-delay: 0.4s;
+}

@@ -1,0 +1,477 @@
+/* Industries Section - Pure CSS for React Components */
+
+/* Industries Hero Section */
+.industries-hero {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.industries-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.industries-hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.industries-hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Industries Stats */
+.industries-stats {
+  padding: 3rem 0;
+  background: #f8fafc;
+}
+
+.industries-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.industry-stat {
+  text-align: center;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.industry-stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.industry-stat-label {
+  color: #64748b;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Industries Grid */
+.industries-section {
+  padding: 4rem 0;
+  background: white;
+}
+
+.industries-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.industries-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.industries-header h2 {
+  font-size: 2.5rem;
+  color: #1e40af;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.industries-header p {
+  font-size: 1.125rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.industry-card {
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.industry-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #1e40af 0%, #f59e0b 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.industry-card:hover {
+  border-color: #f59e0b;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: translateY(-5px);
+}
+
+.industry-card:hover::before {
+  transform: scaleX(1);
+}
+
+.industry-icon {
+  width: 4rem;
+  height: 4rem;
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: #1e40af;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.industry-card:hover .industry-icon {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  color: #d97706;
+  transform: scale(1.1);
+}
+
+.industry-title {
+  font-size: 1.5rem;
+  color: #1e40af;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.industry-description {
+  color: #64748b;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.industry-services {
+  margin-bottom: 1.5rem;
+}
+
+.industry-services h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e40af;
+  margin-bottom: 0.75rem;
+}
+
+.industry-services-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.industry-services-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: #475569;
+}
+
+.industry-services-list li::before {
+  content: "✓";
+  color: #10b981;
+  font-weight: bold;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.industry-case-study {
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: auto;
+  border-left: 4px solid #1e40af;
+}
+
+.industry-case-study h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+}
+
+.industry-case-study p {
+  font-size: 0.875rem;
+  color: #1e40af;
+  font-style: italic;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Cross-Industry Section */
+.cross-industry-section {
+  padding: 4rem 0;
+  background: #f8fafc;
+}
+
+.cross-industry-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.cross-industry-text h2 {
+  font-size: 2.25rem;
+  color: #1e40af;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+
+.cross-industry-description {
+  font-size: 1.125rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.cross-industry-benefits {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.cross-industry-benefits li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: #475569;
+  font-weight: 500;
+}
+
+.cross-industry-benefits li::before {
+  content: "✓";
+  color: #10b981;
+  font-weight: bold;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: #dcfce7;
+  border-radius: 50%;
+}
+
+.cross-industry-certifications {
+  background: linear-gradient(135deg, #dbeafe 0%, #fef3c7 100%);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.certifications-title {
+  font-size: 1.5rem;
+  color: #1e40af;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.certifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.certification-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.certification-item:hover {
+  transform: translateX(5px);
+}
+
+.certification-name {
+  font-weight: 500;
+  color: #374151;
+}
+
+.certification-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.certification-badge.certified {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.certification-badge.active {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.certification-badge.professional {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .cross-industry-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .industries-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .industries-hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .industries-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .industries-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .industry-card {
+    padding: 1.5rem;
+  }
+
+  .cross-industry-certifications {
+    padding: 1.5rem;
+  }
+
+  .industries-hero h1 {
+    font-size: 2rem;
+  }
+
+  .industries-hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .industries-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-card {
+    padding: 1rem;
+  }
+
+  .cross-industry-certifications {
+    padding: 1rem;
+  }
+
+  .industries-hero {
+    padding: 2rem 0;
+  }
+
+  .industries-hero h1 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Animation Classes */
+.industry-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.industry-card.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.industry-stat {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.industry-stat.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger animation delays */
+.industry-card:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.industry-card:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.industry-card:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.industry-card:nth-child(4) {
+  transition-delay: 0.4s;
+}
+.industry-card:nth-child(5) {
+  transition-delay: 0.5s;
+}
+.industry-card:nth-child(6) {
+  transition-delay: 0.6s;
+}
+
+.industry-stat:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.industry-stat:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.industry-stat:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.industry-stat:nth-child(4) {
+  transition-delay: 0.4s;
+}
