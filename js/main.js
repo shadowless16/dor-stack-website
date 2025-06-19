@@ -361,3 +361,30 @@ if ("serviceWorker" in navigator) {
       })
   })
 }
+
+document.addEventListener('mousemove', (e) => {
+    const dot = document.getElementById('cursor-dot');
+    const outline = document.getElementById('cursor-outline');
+
+    // Update dot position
+    dot.style.left = `${e.clientX - 4}px`; // Offset to center the 8x8 dot
+    dot.style.top = `${e.clientY - 4}px`;
+
+    // Update outline position
+    outline.style.left = `${e.clientX - 20}px`; // Offset to center the 40x40 outline
+    outline.style.top = `${e.clientY - 20}px`;
+});
+
+document.addEventListener('mousedown', () => {
+    const dot = document.getElementById('cursor-dot');
+    const outline = document.getElementById('cursor-outline');
+    dot.classList.add('clicked');
+    outline.classList.add('clicked');
+});
+
+document.addEventListener('mouseup', () => {
+    const dot = document.getElementById('cursor-dot');
+    const outline = document.getElementById('cursor-outline');
+    dot.classList.remove('clicked');
+    outline.classList.remove('clicked');
+});
